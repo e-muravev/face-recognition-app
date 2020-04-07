@@ -1,0 +1,26 @@
+.signout {
+  transition: opacity .15s ease-in, transform 0.1 ease-in;
+  color: white;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  margin: 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signout:hover   {
+  opacity: 60%;
+  transform: scale(1.1);
+}
+
+@media (min-width: 576px) {
+	.signout {
+		font-size: 1.4rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.signout {
+		font-size: 1.6rem;
+	}
+}

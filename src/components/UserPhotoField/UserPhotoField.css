@@ -1,0 +1,107 @@
+.submit {
+  width: 90%;
+  background-color: #000343;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.userPhotoField {
+	position: fixed;
+  max-width: 800px;
+  top: 30vh;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #332f2c;
+  font-size: 0.7rem;
+  padding: 5% 0%;
+  border-radius: 5px;
+  border: 1px solid #999950;
+  color: black;
+}
+
+.input_url {
+	width: 90%;
+	padding: .5rem;
+	border-radius: 5px;
+  margin-bottom: 0.1rem;
+}
+
+.close {
+  position: absolute;
+  right: 5px;
+  top: 12px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 20px;
+  width: 2px;
+  background-color: black;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+@media (min-width: 576px) { 
+  .submit {
+    font-size: 0.9rem;
+  }
+  .userPhotoField {
+    font-size: 0.9rem;
+    padding: 4% 0%;
+  }
+  .close {
+    right: 10px;
+    top: 12px;
+  }
+  .close:before, .close:after {
+    height: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .submit {
+    font-size: 1.1rem;
+  }
+  .userPhotoField {
+    font-size: 1.1rem;
+    padding: 3% 0%;
+  }
+  .close {
+    right: 10px;
+    top: 12px;
+  }
+  .close:before, .close:after {
+    height: 30px;
+  }
+}
+
+@media (min-width: 992px) { 
+  .submit {
+    font-size: 1.2rem;
+  }
+  .userPhotoField {
+    font-size: 1.2rem;
+    padding: 3% 0%;
+  }
+  .close {
+    right: 10px;
+    top: 12px;
+  }
+  .close:before, .close:after {
+    height: 30px;
+  }
+}

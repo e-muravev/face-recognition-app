@@ -1,0 +1,27 @@
+.errorMainImage {
+	background-color: green;
+	color: white;
+	padding: 1rem;
+	font-size: 0.6rem;
+	font-weight: bold;
+}
+
+.errorMainImage h1 {
+	margin-top: 0;
+}
+
+.errorMainImage span {
+	color: black;
+}
+
+@media (min-width: 768px) {
+	.errorMainImage {
+		font-size: 0.7rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.errorMainImage {
+		font-size: 1rem;
+	}
+}

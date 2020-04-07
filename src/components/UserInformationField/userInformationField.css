@@ -1,0 +1,56 @@
+.userInformationField {
+	margin-bottom: 30px;
+}
+.title_text {
+	color: rgba(255,255,255);
+	font-family: monospace;
+	font-size: 1.3rem;
+	margin: 0;
+	font-weight: bold;
+}
+
+.text_for_user {
+	color: rgba(255,255,255);
+	font-size: 1.2rem;
+	font-family: monospace;
+}
+
+@media (max-width: 576px) {
+	.title_text {
+		font-size: 1.1rem;
+		padding: 0;
+	}
+	.text_for_user {
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 576px) {
+	.title_text {
+		font-size: 1.3rem;
+		padding: 0;
+	}
+	.text_for_user {
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.title_text {
+		font-size: 1.4rem;
+		padding: 0;
+	}
+	.text_for_user {
+		font-size: 1.05rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.title_text {
+		font-size: 1.5rem;
+		padding: 0;
+	}
+	.text_for_user {
+		font-size: 1.3rem;
+	}
+}

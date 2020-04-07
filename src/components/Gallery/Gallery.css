@@ -1,0 +1,21 @@
+.gallery {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	background-color: black;
+	cursor: pointer;
+	height: 100%;
+	border: 2px solid #000343;
+
+}
+
+.grid-item {
+	display: flex;
+	border: 1px solid #000343;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+

@@ -1,0 +1,174 @@
+/********mobile first layout***********/
+.App {
+  text-align: center;
+}
+
+/***************for buttons*************/
+button {
+  border-radius: .25rem;
+  border: none;
+  background-color: #000343;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  font-size: .85rem;
+  opacity: 1;
+  color: white;
+  transition: opacity .15s ease-in;
+  margin-top: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+button::-moz-focus-inner {
+   border: 0;
+}
+
+button:hover,focus {
+  opacity: .7;
+  transition: opacity .15s ease-in;
+}
+
+button:active {
+    opacity: .9;
+    transition: opacity .15s ease-out;
+}
+
+/********************for flex properties********************/
+.flex {
+  display: flex; 
+  flex-wrap: wrap; 
+  flex-direction: row;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-space-around {
+  justify-content: space-around;
+}
+.justify-content-space-between {
+  justify-content: space-between;
+}
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+/********for particles component*********************/
+.particles {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+/******for layout**********************************/
+.w-25 {width: 25%;}
+.w-50 {width: 50%;}
+.w-75 {width: 75%;}
+.w-100 {width: 100%;}
+
+.pa1 { padding: .25rem; }
+.pa2 { padding: .5rem; }
+.pa3 { padding: 1rem; }
+.pa4 { padding: 2rem; }
+.pa5 { padding: 3rem; }
+.ph4 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.ma1 { margin: .25rem; }
+.ma2 { margin: .5rem; }
+.ma3 { margin: 1rem; }
+.ma4 { margin: 2rem; }
+.ma5 { margin: 3rem; }
+.ma-l-1 { margin-left: 0.25rem }
+.ma-r-1 { margin-right: 0.25rem }
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/******that is end for mobile first*************/
+
+/******css for other devices**********************/
+@media (min-width: 576px) { 
+    .col-sm-1 {width: 8.33%;}
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}  
+}
+
+@media (min-width: 768px) {
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}  
+    
+}
+
+@media (min-width: 992px) { 
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;} 
+}
+
+@media (min-width: 1200px) {
+    .col-xl-1 {width: 8.33%;}
+    .col-xl-2 {width: 16.66%;}
+    .col-xl-3 {width: 25%;}
+    .col-xl-4 {width: 33.33%;}
+    .col-xl-5 {width: 41.66%;}
+    .col-xl-6 {width: 50%;}
+    .col-xl-7 {width: 58.33%;}
+    .col-xl-8 {width: 66.66%;}
+    .col-xl-9 {width: 75%;}
+    .col-xl-10 {width: 83.33%;}
+    .col-xl-11 {width: 91.66%;}
+    .col-xl-12 {width: 100%;}
+}
+
+

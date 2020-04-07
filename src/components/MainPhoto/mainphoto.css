@@ -1,0 +1,22 @@
+.own-photo-click {
+	/*margin: 0;*/
+	font-size: 0.9rem;
+	font-weight: bold;
+	
+}
+.mainphoto {
+	border: 2px solid #000343;
+	padding: 10px 10px 10px 10px;
+}
+
+@media (min-width: 576px) { 
+	.own-photo-click{
+		font-size: 0.9rem;
+	}
+}
+
+@media (min-width: 768px) { 
+	.own-photo-click{
+		font-size: 1.1rem;
+	}
+}

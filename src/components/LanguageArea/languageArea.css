@@ -1,0 +1,47 @@
+.language-area img {
+  width: 2rem;
+  height: auto;
+}
+.language-area select {
+  font-size: 1rem;
+}
+
+/*@media (max-width: 576px) { 
+.language-area img {
+  width: 2rem;
+  height: 1.5rem;
+}
+.language-area select {
+  font-size: 1rem;
+}
+}*/
+
+
+@media (min-width: 576px) { 
+.language-area img {
+  width: 2rem;
+  height: auto;
+}
+.language-area select {
+  font-size: 1.05rem;
+}
+}
+
+@media (min-width: 992px) { 
+.language-area img {
+  width: 2.5rem;
+  height: auto;
+}
+.language-area select {
+  font-size: 1.25rem;
+}
+}
+
+/*@media (min-width: 1450px) { 
+.language-area img {
+  width: 3.5rem;
+}
+.language-area select {
+  font-size: 1.3rem;
+}
+}*/
