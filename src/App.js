@@ -174,7 +174,8 @@ class App extends React.Component {
   }
 
   calculateFaceLocation = (data) => {
-        if (data.outputs[0].data.regions !== undefined)
+        if (data.outputs[0].input.data.image.url === this.props.mainImage &&
+            data.outputs[0].data.regions !== undefined)
         {
             let image = document.getElementById('mainphoto');
             const width = Number(image.width);
