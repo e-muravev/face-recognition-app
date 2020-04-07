@@ -6,8 +6,6 @@
   margin: 0;
   cursor: pointer;
   font-weight: bold;
-  transition: opacity 1s ease-in;
-  transition: transform 1s ease-in;
 }
 
 .signout:hover {
