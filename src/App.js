@@ -55,7 +55,7 @@ const mapDispatchToProps = (dispatch) => {
     displayFaceBox: (faceboxes) => dispatch(setFaceBoxes(faceboxes)),
     setMainImage: (image) => dispatch(setMainImage(image)),
     onExitClick: () => {
-      dispatch(setMainImage('https://www.nastol.com.ua/pic/201702/1920x1200/nastol.com.ua-210453.jpg'))
+      dispatch(setMainImage('https://i.ibb.co/jfJFHKV/s1200asd.jpg'))
       dispatch(setOrderOfHighloghtedImage(6))
     }
   }
