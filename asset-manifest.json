@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/face-recognition-app/static/css/main.421fc085.chunk.css",
+    "main.css": "/face-recognition-app/static/css/main.dfa35525.chunk.css",
     "main.js": "/face-recognition-app/static/js/main.6cb0716b.chunk.js",
     "main.js.map": "/face-recognition-app/static/js/main.6cb0716b.chunk.js.map",
     "runtime-main.js": "/face-recognition-app/static/js/runtime-main.c2e5c8a8.js",
@@ -8,9 +8,9 @@
     "static/js/2.09783add.chunk.js": "/face-recognition-app/static/js/2.09783add.chunk.js",
     "static/js/2.09783add.chunk.js.map": "/face-recognition-app/static/js/2.09783add.chunk.js.map",
     "index.html": "/face-recognition-app/index.html",
-    "precache-manifest.0b305d4ea461efe684054ce7fe2eb851.js": "/face-recognition-app/precache-manifest.0b305d4ea461efe684054ce7fe2eb851.js",
+    "precache-manifest.d2bb6367490cad0417f725210c221acb.js": "/face-recognition-app/precache-manifest.d2bb6367490cad0417f725210c221acb.js",
     "service-worker.js": "/face-recognition-app/service-worker.js",
-    "static/css/main.421fc085.chunk.css.map": "/face-recognition-app/static/css/main.421fc085.chunk.css.map",
+    "static/css/main.dfa35525.chunk.css.map": "/face-recognition-app/static/css/main.dfa35525.chunk.css.map",
     "static/js/2.09783add.chunk.js.LICENSE.txt": "/face-recognition-app/static/js/2.09783add.chunk.js.LICENSE.txt",
     "static/media/Flag_UK.png": "/face-recognition-app/static/media/Flag_UK.f6087f87.png",
     "static/media/face.png": "/face-recognition-app/static/media/face.4bcbb0a0.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.c2e5c8a8.js",
     "static/js/2.09783add.chunk.js",
-    "static/css/main.421fc085.chunk.css",
+    "static/css/main.dfa35525.chunk.css",
     "static/js/main.6cb0716b.chunk.js"
   ]
 }
