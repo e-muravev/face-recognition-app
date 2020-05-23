@@ -1,9 +1,10 @@
 .errorMainImage {
-	background-color: green;
+	background-color: rgb(107, 12, 12);
 	color: white;
 	padding: 1rem;
 	font-size: 0.6rem;
 	font-weight: bold;
+	min-height: 230px;
 }
 
 .errorMainImage h1 {

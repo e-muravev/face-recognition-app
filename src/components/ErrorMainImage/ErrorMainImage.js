@@ -9,18 +9,14 @@ function ErrorMainImage({ language }) {
 			(language === 'english') ?
 			<div>
 				<h2>BAD REQUEST</h2>
-				<p>Are you sure that your image URL is correct?</p>
-				<p>Is it right that your URL end with ".jpg", ".jpeg" or ".png"?</p>
-				<p>Available URL example:</p>
-				<p>https://img2.goodfon.com/original/1920x1200/8/c4/devushka-anzhelina-zholi<span>.jpg</span></p>
+				<p>Not a "jpg", "jpeg" or "png" format</p>
+				<p>URL must ended with ".jpg", ".jpeg" or ".png"</p>
 			</div>
 			:
 			<div>
 				<h2>НЕКОРРЕКТНЫЙ ЗАПРОС</h2>
-				<p>Вы уверенны, что ваша ссылка на картинку корректна?</p>
-				<p>Проверьте, оканчивается ли ваша ссылка расширением ".jpg", ".jpeg" или ".png"?</p>
-				<p>Пример корректной ссылки:</p>
-				<p>https://img2.goodfon.com/original/1920x1200/8/c4/devushka-anzhelina-zholi<span>.jpg</span></p>
+				<p>Формат не соотвествует "jpg", "jpeg" или "png"</p>
+				<p>Ссылка должна оканчиваться на".jpg", ".jpeg" или ".png"</p>
 			</div>
 		}
 		</div>

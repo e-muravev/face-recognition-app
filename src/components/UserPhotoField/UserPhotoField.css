@@ -1,9 +1,13 @@
 .submit {
   width: 90%;
-  background-color: #000343;
-  color: white;
+  background-color: #00010a;
+  color: rgb(214, 209, 209);
   font-size: 0.7rem;
   font-weight: bold;
+}
+
+.userPhotoField h3,.userPhotoField p {
+  color: rgb(214, 209, 209);
 }
 .userPhotoField {
 	position: fixed;
@@ -13,11 +17,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #332f2c;
+  background-color: #05094d;
+  border: 2px solid black;
   font-size: 0.7rem;
-  padding: 5% 0%;
+  padding: 15% 0%;
   border-radius: 5px;
-  border: 1px solid #999950;
   color: black;
 }
 
@@ -46,7 +50,7 @@
   content: ' ';
   height: 20px;
   width: 2px;
-  background-color: black;
+  background-color: white;
 }
 .close:before {
   transform: rotate(45deg);

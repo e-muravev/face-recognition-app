@@ -6,11 +6,11 @@ function UserInformationField({ language, userName, entries }) {
 	'Face detection is a computer technology being used in a variety of applications that identifies human faces in digital images.' :
 	'Распознавание лиц- это компьютерная технология, используемая в различных приложениях, которая идентифицирует человеческие лица на цифровых изображениях.'
 	let text2 = (language === 'english') ?
-	`Try this one, ${userName}, click on any image from gallery or even try your own image, it's get you more fun.`:
+	`Try this one, ${userName}, click on any image from gallery or even try your own image, it's really funny!`:
 	`Хочешь попробовать, ${userName}? - кликай на любую из картинок, что в галерее или же попробуй загрузить свою картинку. Это весело!`
 	let text3 = (language === 'english') ?
-	`${userName}, your current count of your own photo is ${entries}.`:
-	`На данный момент, ${userName}, ты проверил(а) ${entries} собственных фото.`
+	`As of now, ${userName}, you've tried recognize faces on ${entries} images.`:
+	`На данный момент, ${userName}, ты проверил(а) ${entries} собственных картинок.`
 	localStorage.setItem('userEntries', entries)
 	return (
 		<div className="userInformationField col-11">	

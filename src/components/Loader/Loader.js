@@ -1,9 +1,9 @@
 import React from 'react'
 import './Loader.css'
 
-function Loader({ styleOn }) {
+function Loader({ styleOn, style}) {
 	return (
-		<div className={styleOn ? "miniloader" : "loader" }>Loading...</div>	
+		<div className={styleOn} style={{...style, color: 'white'}}></div>	
 	);	
 }
 

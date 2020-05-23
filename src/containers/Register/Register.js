@@ -1,5 +1,6 @@
 import React from 'react'
 import './register.css'
+import Loader from '../../components/Loader/Loader'
 
 class Register extends React.Component {
 	constructor(props) {
@@ -11,7 +12,8 @@ class Register extends React.Component {
 			isAlredyExist: false,
 			nameEmpty: false,
 			emailEmpty: false,
-			passwordEmpty: false
+			passwordEmpty: false,
+			isUserRequest: false
 		}
 	}
 
@@ -34,13 +36,14 @@ class Register extends React.Component {
 
 
 	onSubmitButton = (event) => {
-
+			
 		(this.state.name === '') && this.setState({nameEmpty: true});
 		(this.state.email === '') && this.setState({emailEmpty: true});
 		(this.state.password === '') && this.setState({passwordEmpty: true});
 
 		if(this.state.name && this.state.email && this.state.password)
 		{
+			this.setState({isUserRequest: true})
 			fetch('https://dry-waters-08741.herokuapp.com/register', {
 				method: 'POST',
 				headers: {
@@ -54,9 +57,11 @@ class Register extends React.Component {
 				if (response === 'unable to register')
 				{
 					this.setState({isAlredyExist: true})
+					this.setState({isUserRequest: false})
 				}
 				else {
 					this.props.onRouteChange('signin')
+					this.setState({isUserRequest: false})
 				}
 			})
 		}
@@ -114,7 +119,14 @@ class Register extends React.Component {
 		    />
 		    {this.state.passwordEmpty && <p style={{color: 'red', margin: '0'}}>{error_text}</p>}
 		  </div>
-		  <button type="submit" className="w-100" onClick={this.onSubmitButton}>{register_text}</button>
+		  <button type="submit" className="w-100" onClick={this.onSubmitButton}>
+			{	
+				<div style={{position: 'relative'}}>
+					<p style={{margin: 0}}>{register_text}</p>
+					{(this.state.isUserRequest) && <Loader styleOn={'buttonloader'} style={{position: 'absolute', right: 0, top: 0}}/>}
+			    </div>
+			}
+		  </button>
 		  <button  className="w-100" onClick={() => this.props.onRouteChange('signin')}>{back_to_sign_in_text}</button>
 		</div>	
 		);

@@ -3,9 +3,8 @@ import Picture from '../../containers/Picture/Picture'
 import './mainphoto.css'
 import ErrorMainImage from '../ErrorMainImage/ErrorMainImage'
 
-
 class MainPhoto extends React.Component {
-  		
+
   componentDidMount() {
     this.props.onFetchFaceBoxes('https://i.ibb.co/jfJFHKV/s1200asd.jpg')
   }
@@ -18,23 +17,6 @@ class MainPhoto extends React.Component {
           let scrollOffset = (mainphotoOffset+mainphotoHeight) - document.documentElement.clientHeight
           if (scrollOffset > 0)
           { window.scrollBy(0, scrollOffset + 10) }
-  }
-
-  componentDidUpdate(prevProps) {
-      if(this.props.mainImage !== prevProps.mainImage)
-      {
-        
-        let imageOnloaded = new Promise ( (resolve, reject) => {
-          const image = new Image();
-          image.onload = () => {
-                resolve(true) 
-          };
-          image.onerror = (e) => {reject('image not download')};
-          image.src = this.props.mainImage
-        })
-
-        imageOnloaded.then(result => this.ScrollPage(), error => console.log(error))  
-      }
   }
 
 	render () {

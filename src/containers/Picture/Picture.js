@@ -52,7 +52,7 @@ class Picture extends React.Component {
                         {(faceBoxes.length === 0) ? 
                         <div id="face detecting..." style={{display: 'flex', justifyContent: 'center', paddingTop: '10px'}}>    
                             <h4 style={{color: 'white', margin: '0 auto'}}>Face detecting</h4>
-                            <Loader styleOn={true}/>
+                            <Loader styleOn={'miniloader'}/>
                         </div> : null}
                         
                         {faceBoxes.map((faceBox, i) => {
@@ -67,7 +67,7 @@ class Picture extends React.Component {
         }
         else
         {
-            return (pictureStatus === 'not loading') ? <Loader/> : <img className="w-100" src={url} alt=""/>
+            return (pictureStatus === 'not loading') ? <Loader styleOn={'loader'}/> : <img className="w-100" src={url} alt=""/>
         }
     }
 }
