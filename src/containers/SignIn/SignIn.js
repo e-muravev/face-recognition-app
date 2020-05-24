@@ -88,7 +88,7 @@ class SignIn extends React.Component {
 		let signin_text = (this.props.language === 'english') ? 'Sign In' : 'Войти'
 		let error_text = (this.props.language === 'english') ? 'Email or password are incorrect' : 'Неправильный пароль или почта'
 		let member_text = (this.props.language === 'english') ? 'Not a member?' : 'Еще нет аккаунта?'
-		let Remember_me_text = (this.props.language === 'english') ? 'Remember me?' : 'Запомнить меня'
+		let Remember_me_text = (this.props.language === 'english') ? 'Remember me' : 'Запомнить меня'
 
 		return(
 		<form className="signin" onSubmit={this.onSubmitButton}>
