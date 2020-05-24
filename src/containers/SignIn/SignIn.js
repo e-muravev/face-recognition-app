@@ -1,5 +1,6 @@
 import React from 'react'
 import './signin.css'
+import Loader from '../../components/Loader/Loader'
 
 class SignIn extends React.Component {
 	constructor(props) {
@@ -9,6 +10,7 @@ class SignIn extends React.Component {
 			password: '',
 			isUserNotFound: false,
 			rememberMe: false,
+			isCheckCredential: false
 		}
 	}
 
@@ -45,6 +47,7 @@ class SignIn extends React.Component {
 
 	onSubmitButton = (event) => {
 		event.preventDefault();
+		this.setState({isCheckCredential: true})
 		fetch('https://dry-waters-08741.herokuapp.com/signin', {
 			method: 'POST',
 			headers: {
@@ -54,6 +57,7 @@ class SignIn extends React.Component {
 		})
 		.then(response => response.json())
 		.then(user => {
+			this.setState({isCheckCredential: false})
 			if (user.id)
 			{
 				this.props.onRouteChange('home-page')
@@ -110,7 +114,12 @@ class SignIn extends React.Component {
 		    	onChange={this.onPasswordChange}
 		    />
 		  </div>
-		  <button type="submit" style={{width: '100%'}}>{signin_text}</button>
+		  <button type="submit" style={{width: '100%'}}>
+		  		<div style={{position: 'relative'}}>
+					<p style={{margin: 0}}>{signin_text}</p>
+					{(this.state.isCheckCredential) && <Loader styleOn={'buttonloader'} style={{position: 'absolute', right: 0, top: 0}}/>}
+			    </div>
+		  </button>
 		  <div className="flex justify-content-center align-items-center"> 	
 		  	<input name="remember me" type="checkbox" checked={this.state.rememberMe} onChange={this.toogleRemeberMe}/>
   			<label style={{fontSize: '0.85rem'}} for="remember me">{Remember_me_text}</label>

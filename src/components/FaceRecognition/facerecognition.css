@@ -1,5 +1,6 @@
 .facerecognition {
 	background-color: rgba(0,0,0,.8);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 	max-width: 1024px;
 	margin: 1rem auto;
 	position: relative;

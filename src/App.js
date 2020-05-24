@@ -167,8 +167,17 @@ class App extends React.Component {
 
   // функция заускающаяся при нажатии кнопки в поле, где подгружаешь свою фотку
   onRecognizePhotoSubmit = () => {
-    this.props.setMainImage(this.props.inputUrl)
-    this.onFetchFaceBoxes(this.props.inputUrl, 'fromRecognizePhotoSubmit')
+    const url = this.props.inputUrl
+    if(url.includes('.jpeg') || url.includes('.jpg') || url.includes('.png'))
+    {
+      this.props.setMainImage(this.props.inputUrl)
+      this.onFetchFaceBoxes(this.props.inputUrl, 'fromRecognizePhotoSubmit')
+    } 
+    else
+    {
+      this.props.setMainImage('errorImage')
+    }
+    
     this.props.onUserOwnImageFieldStatusChange(false)
     
   }

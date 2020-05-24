@@ -7,7 +7,7 @@
 button {
   border-radius: .25rem;
   border: none;
-  background-color: #000343;
+  background-color: #1a237e;
   padding-top: .5rem;
   padding-bottom: .5rem;
   font-size: .85rem;
@@ -24,7 +24,7 @@ button::-moz-focus-inner {
 }
 
 button:hover,focus {
-  opacity: .7;
+  opacity: .8;
   transition: opacity .15s ease-in;
 }
 
